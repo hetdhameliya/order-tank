@@ -1,0 +1,10 @@
+productName,categoryName,categoryCode,unit,minOrderQuantity,maxOrderQuantity,description,price,isPublished,sku
+item1,Category 2,asdasd,pcs,20,300,sample item 1,23,TRUE,item 101
+item2,Category 2,a45asd,pcs,400,800,sample item 2,39.54,FALSE,item 102
+item3,Category 2,artasd,box,100,200,sample item 3,34.65,TRUE,item 103
+item4,Category 2,artasd,kg,150,250,sample item 4,56.33,TRUE,item 104
+item5,Category 2,atrasd,pcs,400,500,sample item 5,34.65,TRUE,item 105
+item6,Category 2,artasd,box,600,700,sample item 6,8.55,TRUE,item 106
+item7,Category 2,atrasd,pcs,800,900,sample item 7,34.76,FALSE,item 107
+item8,Category 2,aetras,kg,30,50,sample item 8,44.65,FALSE,item 108
+item9,Category 2,45dasd,pcs,40,90,sample item 9,45.12,FALSE,item 109

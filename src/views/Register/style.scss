@@ -1,0 +1,120 @@
+@import "../../styles/_variables";
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.register-page {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 0px;
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+
+  @media (min-width: 768px) {
+    & {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .login_link {
+    color: $color-orange;
+  }
+
+  //Left Side
+  .register-page-left {
+    background-color: $color-text-invert;
+    height: 100%;
+    width: 100%;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+      & {
+        max-width: 85%;
+        margin: 0 auto;
+        padding: 64px;
+      }
+    }
+
+    .register-page-left_header {
+      padding: 0 5%;
+      margin-bottom: 2%;
+
+      @media (max-width: 1200px) {
+        & {
+          padding: 0%;
+        }
+      }
+
+      .app_logo {
+        margin-bottom: 1rem;
+        text-align: center;
+
+        @media (min-width: 768px) {
+          & {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .Register_Form {
+      padding: 0% 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media (max-width: 1200px) {
+        & {
+          padding: 0%;
+        }
+      }
+
+      .Register_btn {
+        height: 55px;
+        background-color: $color-orange;
+        color: $color-text-invert;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 30px;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        width: 100%;
+        text-transform: capitalize;
+      }
+
+      .phone-input {
+        &:focus {
+          box-shadow: none;
+          outline: 3px solid $color-input-focus-outline;
+        }
+
+        &:hover {
+          border-color: $color-input-hover-border;
+        }
+
+        padding-left: 0.5rem;
+        height: 55px;
+        border-radius: 30px;
+        width: 100%;
+        border: 1px solid $color-input-border;
+      }
+
+      .flag-dropdown {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+@import "../../../styles/variables";
+
+.RightSide_page {
+  display: none;
+
+  @media (min-width: 768px) {
+    & {
+      display: block;
+      background-color: $color-background-nav;
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .backgroundLogo {
+    @media (min-width: 768px) {
+      & {
+        width: 100%;
+        object-fit: cover;
+        background: url("../../../assets/images/loginBackground.png");
+        position: relative;
+      }
+    }
+
+    .RightSide_page_content {
+      @media (min-width: 768px) {
+        & {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, 350%);
+        }
+      }
+
+      .web_logo {
+        margin-top: 1rem;
+
+        @media (min-width: 768px) {
+          & {
+            height: 2.7rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

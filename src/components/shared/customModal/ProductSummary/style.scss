@@ -1,0 +1,17 @@
+.invoice_model{
+    .MuiDialog-paper {
+        height: 800px !important;
+        border-radius: 20px !important;
+        width: 900px !important;
+    }
+}
+
+.invoice_not_found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    height: 100%;
+    width: 100%;
+}

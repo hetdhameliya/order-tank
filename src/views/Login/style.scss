@@ -1,0 +1,116 @@
+@import "../../styles/_variables";
+
+.page_wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 0px;
+  justify-items: center;
+  align-items: center;
+  height: 100vh !important;
+  @media (min-width: 768px) {
+    & {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  //Left Side
+  .login_left_side {
+    background-color: $color-text-invert;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    width: 100%;
+    padding: 32px;
+    @media (min-width: 768px) {
+      & {
+        max-width: 85%;
+        margin: 0 auto;
+        padding: 0 64px;
+      }
+    }
+    .page_left_side form {
+      display: grid;
+    }
+
+    .leftside_header {
+      margin-top: 2rem;
+      padding: 0 5%;
+      @media (max-width: 1200px) {
+        & {
+          padding: 0%;
+        }
+      }
+      .app_logo {
+        margin-bottom: 1rem;
+        text-align: center;
+        @media (min-width: 768px) {
+          & {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .data_Form {
+      padding: 5%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 550px;
+      @media (max-width: 1200px) {
+        & {
+          padding: 0%;
+        }
+      }
+      .Login_btn {
+        height: 55px;
+        background-color: $color-orange;
+        color: $color-text-invert;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 30px;
+        text-transform: capitalize;
+        width: 100%;
+      }
+      .forgot-password-link {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -1rem;
+
+        a {
+          color: $color-orange;
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+      .create_account-link {
+        color: $color-orange;
+        cursor: pointer;
+      }
+
+      .Create_acc {
+        @media (max-width: 1076px) {
+          & {
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
+
+.icon_InputField_wrapper {
+  margin-bottom: 3px;
+  border-radius: 30px;
+  overflow: hidden;
+  padding-left: 0.18rem;
+}
+
+.password_field_icon {
+  font-size: 1.2rem;
+  margin-top: 0.4rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}

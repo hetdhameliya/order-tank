@@ -1,0 +1,32 @@
+@import "../../styles/variables";
+
+.user_main_div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user_invite_div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: -0.5rem;
+}
+
+.user_invite_title {
+    font-size: 16px;
+    font-weight: 600;
+    color: $color-black;
+    margin-top: 3px;
+}
+
+.invate_btn {
+    background-color: $color-orange !important;
+    color: $color-white !important;
+    width: 10.5rem;
+    height: 45px;
+    border-radius: 0 12px 12px 0 !important;
+    margin-top: 8px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}

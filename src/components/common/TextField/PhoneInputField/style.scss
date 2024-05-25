@@ -1,0 +1,24 @@
+@import "../../../../styles/variables";
+
+.phone_number {
+  .phone-input {
+    &:focus {
+      box-shadow: none;
+      outline: 3px solid $color-input-focus-outline;
+    }
+
+    &:hover {
+      border-color: $color-input-hover-border;
+    }
+
+    padding-left: 0.5rem;
+    height: 55px;
+    border-radius: 30px;
+    width: 100%;
+    border: 1px solid $color-input-border;
+  }
+
+  .flag-dropdown {
+    display: none;
+  }
+}

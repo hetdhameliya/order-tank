@@ -1,0 +1,55 @@
+@import "./variables";
+
+.orange_common_btn {
+  display: flex;
+  height: 2.8rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $color-orange;
+  border-radius: 10px !important;
+  text-transform: capitalize !important;
+  color: $color-text-invert !important;
+  background-color: $color-orange !important;
+  text-align: right;
+  font-size: 16px !important;
+}
+
+.white_common_btn {
+  display: flex;
+  height: 2.8rem;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid $color-orange !important;
+  border-radius: 10px !important;
+  text-transform: capitalize !important;
+  color: $color-orange !important;
+  background-color: $color-text-invert !important;
+  text-align: right;
+  font-size: 16px !important;
+
+  &:hover {
+    background-color: $color-orange !important;
+    color: $color-text-invert !important;
+  }
+}
+
+.searchWrapper {
+  margin-bottom: 3px;
+  border-radius: 30px;
+  overflow: hidden;
+  padding-left: 0.18rem;
+  border: 2px solid $color-border;
+  width: 15rem;
+}
+
+.searchInput {
+  height: 45px;
+  font-size: 16px;
+}
+
+.searchIcon {
+  font-size: 1.2rem;
+  margin-top: 0.1rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}

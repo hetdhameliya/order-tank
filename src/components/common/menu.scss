@@ -1,0 +1,128 @@
+@import "../../styles/_variables";
+
+.navItem {
+  padding: 0.2rem 1.25rem;
+  text-decoration: none !important;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+
+.activeNavItem {
+  background-color: $color-background-nav;
+
+  .active_list_item {
+    &:before {
+      position: absolute;
+      content: " ";
+      width: 8px;
+      left: -23px;
+      border-radius: 20px;
+      background: $color-orange;
+      height: 110%;
+      margin-top: -2px;
+      top: 0;
+    }
+
+    .navIcon {
+      color: $color-orange !important;
+    }
+
+    .navLabel {
+      color: $color-orange !important
+    }
+  }
+
+  .MuiTooltip-tooltip {
+    background-color: $color-orange !important;
+    color: $color-white !important;
+    margin-left: 25px !important;
+  }
+
+}
+
+.navIcon {
+  color: $color-black;
+  font-size: 16px !important;
+  margin-right: 22px;
+}
+
+.logout_div {
+  position: absolute;
+  bottom: 0;
+  background-color: $color-orange ;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  cursor: pointer;
+
+  .Logout_icon {
+    color: $color-text-invert;
+    font-size: 20px !important;
+  }
+
+  .logout_label {
+    color: $color-text-invert;
+    font-size: 18px;
+  }
+}
+
+.navLabel {
+  color: $color-black;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.custom-tooltip-main .MuiTooltip-tooltip {
+  margin-left: 26px !important;
+  font-size: 14px !important;
+  background-color: $color-background-tooltip;
+  min-width: 5rem !important;
+  color: $color-white;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.custom-tooltip-logout .MuiTooltip-tooltip {
+  margin-left: 22px !important;
+  font-size: 14px !important;
+  background-color: $color-background-tooltip;
+  min-width: 5rem !important;
+  color: $color-white;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+
+.center_div {
+  background: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.erro_page_div {
+  display: flex;
+  flex-direction: column;
+
+  .error_heading {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    .heading_icon {
+      color: $color-warning;
+      font-size: 38px;
+    }
+  }
+
+  .error_dec {
+    font-size: 17px;
+  }
+}

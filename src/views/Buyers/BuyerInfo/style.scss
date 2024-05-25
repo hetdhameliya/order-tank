@@ -1,0 +1,48 @@
+@import "../../../styles/variables";
+@import "../../../styles/data.scss";
+
+.buyerInfo_container {
+
+  .img {
+    margin-right: 15px;
+    height: 1.4rem;
+    cursor: pointer;
+  }
+
+  .buyer_details {
+    padding: 15px;
+    background-color: $color-white;
+    border-radius: 10px;
+    box-shadow: 0 0 5px $color-details-shadow;
+  }
+
+  .items {
+    background-color: $color-item-background;
+    box-shadow: $color-item-shadow 0px 2px 8px 0px;
+
+  }
+
+  .items_div {
+    font-size: 14px;
+    font-weight: bold;
+    overflow-wrap: break-word;
+  }
+
+  .order_listing_div {
+    display: flex;
+    gap: 10px;
+    margin-right: 1rem;
+  }
+
+
+  ._header {
+    padding-bottom: 0.8rem;
+  }
+
+  .loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+  }
+}

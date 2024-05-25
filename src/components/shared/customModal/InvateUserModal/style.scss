@@ -1,0 +1,66 @@
+@import "../../../../styles/variables";
+
+.invate_modal {
+
+    .svg:not(:root) {
+        font-size: 20px !important;
+    }
+
+    .MuiSvgIcon-root {
+        font-size: 20px !important;
+    }
+
+    .Mui-checked {
+        color: $color-orange !important;
+    }
+
+    .table_head {
+        background-color: $color-background-head;
+
+        .table_heading {
+            .table_div_heading{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            width: 13rem;
+            border: 0.5px solid $color-gray;
+            height: 1.5rem;
+            font-size: 14px;
+            padding: 0.6rem;
+            color: $color-black;
+            font-weight: 600;
+            text-transform: capitalize;
+        }
+    }
+
+    .table_row {
+        .table_div_row{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-transform :capitalize
+        }
+        border: 0.5px solid $color-gray;
+        height: 1rem;
+    }
+
+    .table_first_column {
+        color: $color-black;
+        font-size: 16px;
+    }
+
+    .table_heading {
+        font-size: 20px;
+        font-weight: 600;
+        color: $color-black;
+    }
+
+    .modal_buttons{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin-top: 1rem;
+    }
+}

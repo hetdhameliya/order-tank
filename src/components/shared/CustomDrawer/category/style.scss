@@ -1,0 +1,41 @@
+@import "../../../../styles/variables";
+
+.categoryDrawer_contain {
+  width: 500px;
+  .drawer_header_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    border-bottom: 1px solid $color-drawer-border;
+    position: fixed;
+    height: 80px;
+    top: 0px;
+    background-color: $color-text-invert;
+    z-index: 10;
+    width: 500px;
+  }
+  .drawer_footer {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    align-items: center;
+    padding: 0px 25px;
+    border-top: 1px solid $color-drawer-border;
+    position: fixed;
+    height: 80px;
+    bottom: 0px;
+    background-color: $color-text-invert;
+    z-index: 10;
+    width: 500px;
+    .Category_Cancel_btn {
+      border: 1px solid $color-orange;
+      color: $color-orange;
+      background-color: $color-text-invert;
+    }
+    .Category_Add_btn {
+      background-color: $color-orange;
+      color: $color-text-invert;
+    }
+  }
+}

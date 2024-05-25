@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+@import "../../styles/data.scss";
+
+.buyers_wrapper {
+  .buyers_header {
+    .Form_style {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .search_conatiner_div{
+      display: flex;
+      align-items: center;
+      margin-bottom: 0 !important;
+    }
+
+    .Buyer_search_wrapper {
+      margin-bottom: 3px;
+      border-radius: 10px;
+      overflow: hidden;
+      padding-left: 0.18rem;
+      border: 2px solid $color-border;
+      width: 15rem;
+      width: 14rem;
+      border-radius: 10px 0px 0px 10px !important;
+      border-right: none;
+    }
+
+    .search_input_field {
+      height: 45px;
+      font-size: 16px;
+    }
+
+    .search_icon {
+      font-size: 1.2rem;
+      margin-top: 0.1rem;
+      margin-right: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .buyers_content {
+    margin-top: 1rem;
+  }
+
+  .MuiOutlinedInput-notchedOutline {
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,45 @@
+@import "../../../styles/variables";
+
+.addressInfo_container {
+  padding-left: 60px;
+  width: "100%";
+
+  .search_conatiner_profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+  }
+
+  .addressInfo_container_form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .search_field_wrapper {
+    margin-bottom: 3px;
+    overflow: hidden;
+    padding-left: 0.18rem;
+    border: 2px solid $color-border;
+    width: 14rem !important;
+    border-radius: 10px 0px 0px 10px !important;
+    border-right: none;
+  }
+
+  .search_input_field {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  .search_icon {
+    font-size: 1.2rem;
+    margin-top: 0.1rem;
+    margin-right: 0.5rem;
+    cursor: pointer;
+  }
+
+  .address_table {
+    margin-top: 1rem;
+  }
+}

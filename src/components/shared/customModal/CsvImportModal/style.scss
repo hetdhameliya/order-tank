@@ -1,0 +1,57 @@
+@import "../../../../styles/variables";
+
+.modal-contain {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 14px;
+  padding: 1.5rem 1rem;
+
+  .modal_header {
+    text-align: right;
+  }
+
+  .modal_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 0.8em;
+    text-transform: capitalize;
+    font-size: 20px;
+    gap:20px;
+    padding: 0px 2rem;
+
+    h4 {
+      font-weight: 500;
+    }
+  }
+
+  .icon {
+    font-size:80px;
+    color: $color-gray;
+  }
+
+  .modal_footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // padding: 10px;
+    margin-top: 3rem;
+    border-top: 1px solid $color-gray;
+    padding-top: 0.5rem;
+
+    .download {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      color: $color-orange;
+      cursor: pointer;
+      font-size: 15px;
+    }
+  }
+
+  
+}
